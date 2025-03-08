@@ -85,7 +85,7 @@ body{
 
 header{
   opacity: 0;
-  animation: popSite 0.5s ease-out 2s forwards;
+  animation: popSite 0.5s ease-out 2.2s forwards;
 }
 
 .text__accueil{
