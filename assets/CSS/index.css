@@ -1,42 +1,115 @@
-.FirstWords{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
+*{
+  box-sizing : border-box;
+  margin :0;
+  padding : 0;
+  font-family : sans-serif;
+}
+
+@keyframes popSite{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes appearTop{
+  0%{
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0px) scale(1);
+  }
+}
+
+@keyframes popTxt {
+  0%{
+    opacity: 0;
+    transform: translate(-20px , 20px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translate(0px , 0px);
+  }
+  
+}
+
+.animation__popTxt1{
+  animation: popTxt 0.2s ease-out 0.4s forwards;
+}
+.animation__popTxt2{
+  animation: popTxt 0.2s ease-out 0.5s forwards;
+}
+.animation__popTxt3{
+  animation: popTxt 0.2s ease-out 0.6s forwards;
+}
+.animation__popTxt4{
+  animation: popTxt 0.2s ease-out 0.7s forwards;
+}
+.animation__popTxt5{
+  animation: popTxt 0.2s ease-out 0.9s forwards;
+}
+.animation__popTxt6{
+  animation: popTxt 0.2s ease-out 1.1s forwards;
+}
+.animation__popTxt7{
+  animation: popTxt 0.2s ease-out 1.2s forwards;
+}
+.animation__popTxt8{
+  animation: popTxt 0.2s ease-out 1.3s forwards;
+}
+.animation__popTxt9{
+  animation: popTxt 0.2s ease-out 1.4s forwards;
+}
+.animation__popTxt10{
+  animation: popTxt 0.2s ease-out 1.5s forwards;
+}
+.animation__popTxt11{
+  animation: popTxt 0.2s ease-out 1.6s forwards;
+}
+.animation__popTxt12{
+  animation: popTxt 0.2s ease-out 1.7s forwards;
+}
+
+.animation__appearTop{
+  animation: appearTop 0.3s ease-out forwards;
+}
+
+body{
   color: #fff;
 }
-.FirstWords__word{
-  width: 50%;
-  margin: 0px auto;
+
+header{
+  opacity: 0;
+  animation: popSite 0.5s ease-out 2s forwards;
+}
+
+.text__accueil{
+  margin: 230px auto 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 2rem;
+}
+.text__accueil__salut{
+  opacity: 0;
+  font-weight: 700;
+}
+
+.text__acueil__presentation{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  width: 70%;
+  gap: 15px;
+  margin: 10px auto;
 }
-.FirstWords__word h2{
-  visibility: hidden;
+.text__acueil__presentation h2{
   opacity: 0;
-  transform: translateX(-50px);
-  font-size: 28px;
-  padding: 10px;
-  transition : opacity 0.4s  ease-out , 
-  visibility 0.4s ease-out , 
-  transform 0.4s ease-out;
-}
-.salut {
-  display: none;
-  opacity: 0;
-  transform: translateX(-50px);
-  font-size: 31px;
-  width: max-content;
-  margin: 20px auto 0px auto;
-  justify-content: center;
-  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
-}
-
-.salut.active {
-  display: flex;
-  opacity: 1;
-  transform: translateX(0);
 }

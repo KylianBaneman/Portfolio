@@ -9,26 +9,22 @@ body{
   background-color: #000;
 }
 
-header{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 50px;
-}
 
-.header__nav{
-  min-width: 70%;
-  margin: 0px auto;
-}
+
 .header__menu{
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 2;
+  background-color: #000;
   border: 1px solid rgba(255, 255, 255, 0.7);
-  border-radius: 18px;
+  border-radius: 25px;
   width: max-content;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
-  margin: 0px auto;
   list-style: none;
   font-size: 20px;
   padding: 0px 20px;
