@@ -113,3 +113,30 @@ header{
 .text__acueil__presentation h2{
   opacity: 0;
 }
+
+.text__accueil__btn{
+  margin: 20px auto;
+  opacity: 0;
+  animation: popSite 0.5s ease-out 2s forwards;
+  display: inline-block;
+  border-radius: 12px;
+  text-decoration: none;
+}
+
+.text__accueil__btn span{
+  border: 2px solid rgba(240, 240, 240, 0.8);
+  display: inline-block;
+  background: #0e0f0e;
+  color: rgba(240, 240, 240, 0.8);
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.15s ease-out , color 0.2s ease-out;
+}
+
+.text__accueil__btn span:hover{
+  transform: scale(1.1);
+  color: #fff;
+}
