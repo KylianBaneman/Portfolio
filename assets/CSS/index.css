@@ -29,7 +29,7 @@
   margin: 20px auto;
   opacity: 0;
   display: inline-block;
-  animation: popSite 0.5s ease-out 2s forwards;
+  animation: popSite 0.5s ease-out 1.7s forwards;
   border-radius: 12px;
   text-decoration: none;
 }
@@ -55,7 +55,7 @@
 
 .quiSuisje{
   opacity: 0;
-  animation: popSite 0.5s ease-out 2s forwards;
+  animation: popSite 0.5s ease-out 1.7s forwards;
   margin: 150px auto 0px auto;
   display: flex;
   flex-direction: column;
@@ -106,6 +106,36 @@
 }
 
 .quiSuisje__content__text p{
-  font-size: 18px;
+  font-size: 19px;
   width: 90%;
+}
+
+
+.projets{
+  display: flex;
+  justify-content: space-around;
+  margin: 150px auto;
+}
+
+.projets__title{
+  width: 30%;
+
+}
+
+.projets__title h2{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.projets__title__text{
+  width: 40%;
+}
+
+.projets__title p{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.projets__content{
+  width: 25%;
 }
