@@ -17,7 +17,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 75%;
+  width: 65%;
   gap: 15px;
   margin: 10px auto;
 }
@@ -105,6 +105,10 @@
   width: 50%;
 }
 
+.quiSuisje__content__text span{
+  cursor: pointer;
+}
+
 .quiSuisje__content__text p{
   font-size: 19px;
   width: 90%;
@@ -119,6 +123,7 @@
 
 .projets__title{
   width: 30%;
+  margin: 0px auto;
 
 }
 
@@ -137,5 +142,70 @@
 }
 
 .projets__content{
-  width: 25%;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.projets__content__card{
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  height: auto;
+  background-color: rgba(32, 32, 32, 0.6);
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.projets__content__card__layer{
+  padding: 10px 20px;
+  border-radius: 7px;
+  background-color: rgba(12,12,12);
+  transition: background-color 0.5s ease-out;
+  height: 100%;
+}
+
+.projets__content__img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 325px;
+  overflow: hidden;
+}
+.projets__content__img img{
+  width: 100%;
+  height: auto;
+  border: 2px solid #fff;
+  border-radius: 12px;
+}
+
+@media (pointer : fine) {
+  .projets__content__card:hover > .projets__content__card__layer{
+    background-color: rgb(26, 26, 26 , 1);
+  }
+}
+
+.projecteur{
+  filter: blur(40px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 90%;
+  height: 90%;
+  background-color: rgb(255, 255, 255, 0.8);
+  border-radius: 50%;
+}
+
+.proj1{
+  background-image: repeating-linear-gradient(169deg, rgba(0,0,0,0.05) 0px, rgba(0,0,0,0.05) 2px,transparent 2px, transparent 4px),linear-gradient(124deg, rgb(228,193,147),rgb(143,79,21));
+}
+
+.proj2{
+  background-image: repeating-linear-gradient(169deg, rgba(0,0,0,0.05) 0px, rgba(0,0,0,0.05) 2px,transparent 2px, transparent 4px),linear-gradient(124deg, rgb(128,198,255),rgb(14,15,14));
 }
